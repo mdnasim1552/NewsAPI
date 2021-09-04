@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    android:background="@android:color/white"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/news_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hurricane Ida evacuees urged to return to New Orleans"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:ellipsize="end"
+            android:maxLines="2"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:id="@+id/news_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/product_image"
+                android:text="Product Price"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:maxLines="6"
+                />
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                android:id="@+id/news_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/product_name"
+                android:layout_marginTop="2dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/news_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_price"
+            android:text="By Nasim"
+            android:layout_marginTop="2dp"
+            android:textStyle="italic"
+            android:textSize="13sp"
+            android:textColor="@color/purple_500"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/news_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_price"
+            android:text="Published at"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
